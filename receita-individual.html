@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/receita-individual.css">
+     <link rel="stylesheet" href="assets/css/navbar.css" />
+     <link rel="stylesheet" href="assets/css/footer.css">
+    <title>Receitas Individuais</title>
+</head>
+<body>
+  <header>
+  <nav>
+    <h1>Receitas Individuais</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="receita-individual.html">Receita Individual</a>
+      <a href="modo-cozinha.html">Modo Cozinha</a>
+      <a href="Sobre.html">Sobre</a>
+      <a href="Contato.html">Contato</a>
+    </div>
+  </nav>
+
+  <div class="container">
+  <div class="dropdown">
+        <button class="dropbtn">Receitas Principais ⏷</button>
+        <div class="dropdown-content">
+          <a href="#bolo-cenoura">Bolo de Cenoura</a>
+          <a href="#feijao-tropeiro">Feijão Tropeiro</a>
+          <a href="#pudim-leite">Pudim de Leite</a>
+          <a href="#empadinha-frango">Empadinha de Frango</a>
+          <a href="#canjica-amendoim">Canjica com Amendoim</a>
+          <a href="#cuscuz-nordestino">Cuscuz Nordestino</a>
+          <a href="#brigadeiro-tradicional">Brigadeiro Tradicional</a>
+          <a href="#vinho-quente">Vinho Quente</a>
+          <a href="#tutu-feijao">Tutu de Feijão</a>
+        </div>
+      </div>
+
+       <div class="dropdown">
+        <button class="dropbtn">Chás Medicinais ⏷</button>
+        <div class="dropdown-content">
+          <a href="#cha-camomila">Chá de Camomila</a>
+          <a href="#Chá-de-Erva-Doce">Chá de Erva Doce</a>
+          <a href="#cha-hortela">Chá de Hortelã</a>
+          <a href="#cha-melissa">Chá de Melissa (Erva-Cidreira)</a>
+          <a href="#cha-gengibre-limao">Chá de Gengibre com Limão</a>
+          <a href="#cha-hibisco">Chá de Hibisco</a>
+          <a href="#cha-alecrim">Chá de Alecrim</a>
+          <a href="#cha-boldo">Chá de Boldo</a>
+          <a href="#cha-alho-limao">Chá de Alho com Limão</a>
+        </div>
+      </div>
+      
+       <div class="dropdown">
+        <button class="dropbtn">Sobremesas ⏷</button>
+        <div class="dropdown-content">
+          <a href="#Torta-de-Limao">Bolo de Cenoura</a>
+          <a href="#Gelado-de-Abacaxi">Gelado de Abacaxi</a>
+          <a href="#Mousse-de-Morango">Mousse de Morango</a>
+          <a href="#Banoffee-na-Taca">Banoffee na Taca</a>
+          <a href="#Cocada-Cremosa">Cocada Cremosa</a>
+        </div>
+      </div>
+
+       <div class="dropdown">
+        <button class="dropbtn">Receitas Fitness ⏷</button>
+        <div class="dropdown-content">
+          <a href="#Salada-de-Quinoa">Salada de Quinoa com Legumes</a>
+          <a href="#Panqueca-de-Banana">Panqueca de Banana e Aveia</a>
+          <a href="#Bolinho-de-Coco">Bolinho de Coco Low Carb</a>
+          <a href="#Creme-de-Abacate">Creme Proteico de Abacate</a>
+          <a href="#Chips-de-Batata-Doce">Chips de Batata-Doce</a>
+
+        </div>
+      </div>
+
+       <div class="dropdown">
+        <button class="dropbtn">Café da Manhã ⏷</button>
+        <div class="dropdown-content">
+          <a href="#Pao-de-Queijo-Fit">Pão de Queijo Fit</a>
+          <a href="#Omelete-Espinafre-Tomate">Omelete de Espinafre com Tomate</a>
+          <a href="#Mingau-Aveia-Frutas">Mingau de Aveia com Frutas</a>
+          <a href="#Smoothie-Morango-Iogurte">Smoothie de Morango com Iogurte</a>
+          <a href="#Tapioca-Frango-Ricota">Tapioca com Recheio de Frango e Ricota</a>
+
+        </div>
+      </div>
+
+       <div class="dropdown">
+        <button class="dropbtn">Lanche da Tarde ⏷</button>
+        <div class="dropdown-content">
+          <a href="#Sanduiche-Natural-Frango">Sanduíche Natural de Frango</a>
+          <a href="#Pao-Batata-Chia">Pão de Batata Doce com Chia</a>
+          <a href="#Shake-Banana-Amendoim">Shake de Banana com Pasta de Amendoim</a>
+          <a href="#Muffin-Maca-Canela">Muffin Integral de Maçã e Canela</a>
+          <a href="#Mix-Oleaginosas-Frutas">Mix de Oleaginosas com Frutas Secas</a>
+
+        </div>
+      </div>
+
+       <div class="dropdown">
+        <button class="dropbtn"> Jantar ⏷</button>
+        <div class="dropdown-content">
+          <a href="#Escondidinho-Mandioca-Carne">Escondidinho de Mandioca com Carne Moída</a>
+          <a href="#Quibe-Abobora-Recheado">Quibe de Abóbora Recheado com Ricota</a>
+          <a href="#Sopa-Legumes-Frango">Sopa de Legumes com Frango Desfiado</a>
+          <a href="#Panqueca-Integral-Espinaca">Panqueca Integral de Espinafre com Cottage</a>
+          <a href="#Arroz-Colorido-Proteico">Arroz Colorido com Proteína de Soja</a>
+        </div>
+      </div>
+
+       <div class="dropdown">
+        <button class="dropbtn">Receitas Natalinas ⏷</button>
+        <div class="dropdown-content">
+          <a href="#Salpicao-Frango-Natalino">Salpicão de Frango Natalino</a>
+          <a href="#Farofa-Natalina-Frutas">Farofa Natalina com Frutas Secas</a>
+          <a href="#Tender-Molho-Laranja">Tender ao Molho de Laranja</a>
+          <a href="#Arroz-Natalino-Castanhas">Arroz Natalino com Castanhas</a>
+          <a href="#Rabanada-Assada-Canela">Rabanada Assada com Canela</a>
+
+        </div>
+      </div>
+      </div>
+    </header>
+<main class="receita-individual">
+       
+
+      <!-- Receita 1 -->
+      <section id="bolo-cenoura" class="receita">
+      
+      <div>
+      <img src="assets/img/receitas/bolo de cenoura.jpg" alt="Bolo de Cenoura" />
+      </div>
+
+      <div>
+      <h2>Bolo de Cenoura</h2>
+      <p><strong>⏱️ Tempo:</strong> 50 min | <strong>🍽️ Rendimento:</strong> 8 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 3 cenouras médias</li>
+        <li><input type="checkbox" /> 3 ovos</li>
+        <li><input type="checkbox" /> 1 xícara de óleo</li>
+        <li><input type="checkbox" /> 2 xícaras de açúcar</li>
+        <li><input type="checkbox" /> 2 e 1/2 xícaras de farinha de trigo</li>
+        <li><input type="checkbox" /> 1 colher de sopa de fermento</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Bata no liquidificador a cenoura, os ovos e o óleo.</li>
+        <li>Adicione o açúcar e bata mais.</li>
+        <li>Despeje em uma tigela e misture a farinha e o fermento.</li>
+        <li>Leve ao forno pré-aquecido a 180°C por 40 minutos.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+    <!-- Receita 2 -->
+    <section id="feijao-tropeiro" class="receita">
+      <div>
+      <img src="assets/img/feijao.jpg" alt="Feijão Tropeiro" />
+      </div>
+      <div>
+      <h2>Feijão Tropeiro</h2>
+      <p><strong>⏱️ Tempo:</strong> 40 min | <strong>🍽️ Rendimento:</strong> 4 porções | <strong>⭐ Dificuldade:</strong> Médio</p>
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 2 xícaras de feijão cozido</li>
+        <li><input type="checkbox" /> 200g de bacon picado</li>
+        <li><input type="checkbox" /> 1 cebola picada</li>
+        <li><input type="checkbox" /> 2 ovos</li>
+        <li><input type="checkbox" /> 1 xícara de farinha de mandioca</li>
+        <li><input type="checkbox" /> Sal, cheiro-verde e pimenta a gosto</li>
+      </ul>
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Frite o bacon até dourar e adicione a cebola.</li>
+        <li>Junte os ovos e mexa até cozinhar.</li>
+        <li>Adicione o feijão cozido e misture bem.</li>
+        <li>Acrescente a farinha aos poucos e finalize com cheiro-verde.</li>
+      </ol>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+    <!-- Receita 3 -->
+    <section id="pudim-leite" class="receita">
+     <div>
+        <img src="assets/img/pudim.jpg" alt="Pudim de Leite" />
+      </div>
+      <div>
+       <h2>Pudim de Leite</h2>
+      <p><strong>⏱️ Tempo:</strong> 1h 30 min | <strong>🍽️ Rendimento:</strong> 10 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 lata de leite condensado</li>
+        <li><input type="checkbox" /> 2 medidas da lata de leite</li>
+        <li><input type="checkbox" /> 3 ovos</li>
+        <li><input type="checkbox" /> 1 xícara de açúcar (para o caramelo)</li>
+      </ul>
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Faça o caramelo com o açúcar e espalhe na forma.</li>
+        <li>Bata os ingredientes do pudim no liquidificador.</li>
+        <li>Despeje na forma caramelizada.</li>
+        <li>Asse em banho-maria por 1h 30 min a 180°C.</li>
+      </ol>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+       <!-- Receita 4 -->
+    <section id="empadinha-frango" class="receita">
+      <div>
+      <img src="assets/img/receitas/empadinha.jpg" alt="Empadinha de Frango" />
+      </div>
+      <div>
+        <h2>Empadinha de Frango</h2>
+      <p><strong>⏱️ Tempo:</strong> 1h | <strong>🍽️ Rendimento:</strong> 12 unidades | <strong>⭐ Dificuldade:</strong> Médio</p>
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 500g de farinha de trigo</li>
+        <li><input type="checkbox" /> 250g de manteiga</li>
+        <li><input type="checkbox" /> 1 gema</li>
+        <li><input type="checkbox" /> Sal a gosto</li>
+        <li><input type="checkbox" /> Recheio de frango desfiado temperado</li>
+      </ul>
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Misture a farinha, manteiga, gema e sal até formar uma massa.</li>
+        <li>Forre forminhas com a massa, recheie com frango e cubra com mais massa.</li>
+        <li>Pincele gema por cima e asse a 180°C por 30 minutos.</li>
+      </ol>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+      <!-- Receita 5 -->
+    <section id="canjica-amendoim" class="receita">
+      <div>
+      <img src="assets/img/receitas/canjica-amendoim.jpg" alt="Canjica com Amendoim" />
+      </div>
+      <div>
+        <h2>Canjica com Amendoim</h2>
+      <p><strong>⏱️ Tempo:</strong> 1h 20 min | <strong>🍽️ Rendimento:</strong> 6 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 500g de canjica branca</li>
+        <li><input type="checkbox" /> 1 litro de leite</li>
+        <li><input type="checkbox" /> 1 lata de leite condensado</li>
+        <li><input type="checkbox" /> 1 xícara de amendoim torrado e moído</li>
+        <li><input type="checkbox" /> Canela em pau e cravo a gosto</li>
+      </ul>
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Cozinhe a canjica até ficar macia.</li>
+        <li>Adicione o leite, leite condensado, amendoim, canela e cravo.</li>
+        <li>Cozinhe por mais 20 minutos mexendo sempre.</li>
+      </ol>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+          <!-- Receita 6 -->
+    <section id="cuscuz-nordestino" class="receita">
+      <div>
+      <img src="assets/img/receitas/cuscuz-nordestino.jpg" alt="Cuscuz Nordestino" />
+      </div>
+      <div>
+        <h2>Cuscuz Nordestino</h2>
+      <p><strong>⏱️ Tempo:</strong> 20 min | <strong>🍽️ Rendimento:</strong> 4 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 2 xícaras de flocão de milho</li>
+        <li><input type="checkbox" /> 1 xícara de água</li>
+        <li><input type="checkbox" /> Sal a gosto</li>
+        <li><input type="checkbox" /> Manteiga para servir</li>
+      </ul>
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Hidrate o flocão com água e sal por 10 minutos.</li>
+        <li>Coloque na cuscuzeira e cozinhe por 10 minutos no vapor.</li>
+        <li>Sirva com manteiga derretida.</li>
+      </ol>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+            <!-- Receita 7 -->
+    <section id="brigadeiro-tradicional" class="receita">
+     <div>
+      <img src="assets/img/receitas/brigadeiro-tradicional.jpg" alt="Brigadeiro Tradicional" />
+      </div>
+      <div>
+         <h2>Brigadeiro Tradicional</h2>
+      <p><strong>⏱️ Tempo:</strong> 20 min | <strong>🍽️ Rendimento:</strong> 20 unidades | <strong>⭐ Dificuldade:</strong> Fácil</p>
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 lata de leite condensado</li>
+        <li><input type="checkbox" /> 1 colher de sopa de manteiga</li>
+        <li><input type="checkbox" /> 2 colheres de sopa de chocolate em pó</li>
+        <li><input type="checkbox" /> Chocolate granulado para enrolar</li>
+      </ul>
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Leve ao fogo baixo o leite condensado, manteiga e chocolate.</li>
+        <li>Misture até desgrudar do fundo da panela.</li>
+        <li>Deixe esfriar, enrole e passe no granulado.</li>
+      </ol>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+
+              <!-- Receita 8 -->
+    <section id="vinho-quente" class="receita">
+      <div>
+      <img src="assets/img/receitas/vinho-quente.jpg" alt="Vinho Quente" />
+      </div>
+      <div>
+        <h2>Vinho Quente</h2>
+      <p><strong>⏱️ Tempo:</strong> 30 min | <strong>🍽️ Rendimento:</strong> 6 copos | <strong>⭐ Dificuldade:</strong> Fácil</p>
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 garrafa de vinho tinto seco</li>
+        <li><input type="checkbox" /> 1 xícara de açúcar</li>
+        <li><input type="checkbox" /> 1 maçã picada</li>
+        <li><input type="checkbox" /> Canela em pau e cravo</li>
+        <li><input type="checkbox" /> 1 xícara de água</li>
+      </ul>
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Ferva a água com açúcar, canela, cravo e maçã.</li>
+        <li>Adicione o vinho e deixe aquecer sem ferver.</li>
+        <li>Sirva quente.</li>
+      </ol>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+              <!-- Receita 9 -->
+    <section id="tutu-feijao" class="receita">
+      <div>
+      <img src="assets/img/receitas/tutu-feijao.jpg" alt="Tutu de Feijão" />
+      </div>
+      <div>
+        <h2>Tutu de Feijão</h2>
+      <p><strong>⏱️ Tempo:</strong> 40 min | <strong>🍽️ Rendimento:</strong> 4 porções | <strong>⭐ Dificuldade:</strong> Médio</p>
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 2 xícaras de feijão cozido com caldo</li>
+        <li><input type="checkbox" /> 1 xícara de farinha de mandioca</li>
+        <li><input type="checkbox" /> 100g de bacon picado</li>
+        <li><input type="checkbox" /> 1 cebola picada</li>
+        <li><input type="checkbox" /> 2 dentes de alho amassados</li>
+        <li><input type="checkbox" /> Sal, pimenta-do-reino e cheiro-verde a gosto</li>
+      </ul>
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Bata o feijão com o caldo no liquidificador até formar um creme.</li>
+        <li>Em uma panela, frite o bacon até dourar. Adicione a cebola e o alho e refogue bem.</li>
+        <li>Despeje o creme de feijão na panela e misture.</li>
+        <li>Adicione a farinha aos poucos, mexendo sempre, até atingir a consistência desejada.</li>
+        <li>Ajuste o sal e a pimenta. Finalize com cheiro-verde picado.</li>
+        <li>Sirva quente, acompanhado de arroz, couve refogada e torresmo, se quiser caprichar.</li>
+      </ol>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+    <!------------------- Chás ------------------->
+
+            <!-- 1. Chá -->
+      <section id="cha-camomila" class="receita">
+        <div>
+        <img src="assets/img/receitas/cha-camomila.jpg" alt="Chá de Camomila" />
+        </div>
+        <div>
+          <h2>Chá de Camomila</h2>
+        <p><strong>⏱️ Tempo:</strong> 10 min | <strong>🍽️ Rendimento:</strong> 2 xícaras | <strong>⭐ Dificuldade:</strong> Fácil</p>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 2 colheres de sopa de flores secas de camomila</li>
+          <li><input type="checkbox" /> 500 ml de água</li>
+        </ul>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Ferva a água e desligue o fogo.</li>
+          <li>Adicione a camomila e tampe por 5 minutos.</li>
+          <li>Coe e sirva morno.</li>
+        </ol>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+      <!-- 2. Chá -->
+      <section id="cha-erva-doce" class="receita">
+        <div>
+        <img src="assets/img/receitas/cha-erva-doce.jpg" alt="Chá de Erva-Doce" />
+        </div>
+        <div>
+          <h2>Chá de Erva-Doce</h2>
+        <p><strong>⏱️ Tempo:</strong> 10 min | <strong>🍽️ Rendimento:</strong> 2 xícaras | <strong>⭐ Dificuldade:</strong> Fácil</p>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 1 colher de sopa de sementes de erva-doce</li>
+          <li><input type="checkbox" /> 500 ml de água</li>
+        </ul>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Ferva a água com as sementes por 5 minutos.</li>
+          <li>Desligue o fogo, tampe e deixe em infusão por mais 5 minutos.</li>
+          <li>Coe e sirva.</li>
+        </ol>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 3. Chá -->
+      <section id="cha-hortela" class="receita">
+        <div>
+        <img src="assets/img/receitas/cha-hortela.png" alt="Chá de Hortelã" />
+        </div>
+        <div>
+          <h2>Chá de Hortelã</h2>
+        <p><strong>⏱️ Tempo:</strong> 10 min | <strong>🍽️ Rendimento:</strong> 2 xícaras | <strong>⭐ Dificuldade:</strong> Fácil</p>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 1 punhado de folhas frescas de hortelã</li>
+          <li><input type="checkbox" /> 500 ml de água</li>
+        </ul>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Ferva a água e desligue o fogo.</li>
+          <li>Adicione as folhas de hortelã e tampe por 5 minutos.</li>
+          <li>Coe e sirva.</li>
+        </ol>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 4. Chá -->
+      <section id="cha-melissa" class="receita">
+        <div>
+        <img src="assets/img/receitas/cha-melissa.jpg" alt="Chá de Melissa" />
+        </div>
+        <div>
+          <h2>Chá de Melissa (Erva-Cidreira)</h2>
+        <p><strong>⏱️ Tempo:</strong> 10 min | <strong>🍽️ Rendimento:</strong> 2 xícaras | <strong>⭐ Dificuldade:</strong> Fácil</p>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 1 colher de sopa de folhas secas de melissa</li>
+          <li><input type="checkbox" /> 500 ml de água</li>
+        </ul>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Ferva a água e desligue o fogo.</li>
+          <li>Adicione a melissa e tampe por 5 minutos.</li>
+          <li>Coe e sirva.</li>
+        </ol>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 5. Chá -->
+      <section id="cha-gengibre-limao" class="receita">
+       <div>
+        <img src="assets/img/receitas/cha-gengibre-limao.jpg" alt="Chá de Gengibre com Limão" />
+        </div>
+        <div>
+           <h2>Chá de Gengibre com Limão</h2>
+        <p><strong>⏱️ Tempo:</strong> 15 min | <strong>🍽️ Rendimento:</strong> 2 xícaras | <strong>⭐ Dificuldade:</strong> Fácil</p>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 1 pedaço de gengibre (2 cm)</li>
+          <li><input type="checkbox" /> Suco de 1 limão</li>
+          <li><input type="checkbox" /> 500 ml de água</li>
+          <li><input type="checkbox" /> Mel a gosto</li>
+        </ul>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Ferva o gengibre na água por 10 minutos.</li>
+          <li>Desligue o fogo, adicione o suco de limão e mel.</li>
+          <li>Sirva quente.</li>
+        </ol>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 6. Chá -->
+      <section id="cha-hibisco" class="receita">
+        <div>
+        <img src="assets/img/receitas/cha-hibisco.jpg" alt="Chá de Hibisco" />
+        </div>
+        <div>
+          <h2>Chá de Hibisco</h2>
+        <p><strong>⏱️ Tempo:</strong> 10 min | <strong>🍽️ Rendimento:</strong> 2 xícaras | <strong>⭐ Dificuldade:</strong> Fácil</p>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 2 colheres de sopa de flores secas de hibisco</li>
+          <li><input type="checkbox" /> 500 ml de água</li>
+        </ul>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Ferva a água e desligue o fogo.</li>
+          <li>Adicione o hibisco e tampe por 5 minutos.</li>
+          <li>Coe e sirva morno ou gelado.</li>
+        </ol>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 7. Chá -->
+      <section id="cha-alecrim" class="receita">
+        <div></div>
+        <img src="assets/img/receitas/cha-alecrim.jpg" alt="Chá de Alecrim" />
+        </div>
+        <div>
+          <h2>Chá de Alecrim</h2>
+        <p><strong>⏱️ Tempo:</strong> 10 min | <strong>🍽️ Rendimento:</strong> 2 xícaras | <strong>⭐ Dificuldade:</strong> Fácil</p>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 1 colher de sopa de folhas frescas ou secas de alecrim</li>
+          <li><input type="checkbox" /> 500 ml de água</li>
+        </ul>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Ferva a água e desligue o fogo.</li>
+          <li>Adicione o alecrim e tampe por 5 a 10 minutos.</li>
+          <li>Coe e sirva morno. Se quiser, adoce com mel.</li>
+        </ol>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 8. Chá -->
+      <section id="cha-boldo" class="receita">
+        <div>
+        <img src="assets/img/receitas/cha-boldo.jpg" alt="Chá de Boldo" />
+        </div>
+        <div>
+          <h2>Chá de Boldo</h2>
+        <p><strong>⏱️ Tempo:</strong> 10 min | <strong>🍽️ Rendimento:</strong> 2 xícaras | <strong>⭐ Dificuldade:</strong> Fácil</p>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 5 folhas frescas de boldo</li>
+          <li><input type="checkbox" /> 500 ml de água</li>
+        </ul>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Ferva a água e desligue o fogo.</li>
+          <li>Adicione as folhas de boldo e tampe por 5 minutos.</li>
+          <li>Coe e sirva morno. Ideal para aliviar problemas digestivos.</li>
+        </ol>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 9. Chá -->
+      <section id="cha-alho-limao" class="receita">
+        <div></div>
+        <img src="assets/img/receitas/cha-alho-limao.jpg" alt="Chá de Alho com Limão" />
+        </div>
+        <div>
+          <h2>Chá de Alho com Limão</h2>
+        <p><strong>⏱️ Tempo:</strong> 15 min | <strong>🍽️ Rendimento:</strong> 2 xícaras | <strong>⭐ Dificuldade:</strong> Fácil</p>
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 2 dentes de alho amassados</li>
+          <li><input type="checkbox" /> Suco de 1 limão</li>
+          <li><input type="checkbox" /> 500 ml de água</li>
+          <li><input type="checkbox" /> Mel a gosto</li>
+        </ul>
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Ferva o alho na água por 10 minutos.</li>
+          <li>Desligue o fogo, adicione o suco de limão e mel.</li>
+          <li>Sirva quente. Excelente para resfriados e imunidade.</li>
+        </ol>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+      <!------------------- Sobremesas ------------------->
+
+      <!-- 1. Sobremesas -->
+      <section id="Torta-de-Limao" class="receita">
+        <div>
+        <img src="assets/img/receitas/torta-de-limo.jpg" alt="Torta de Limão" />
+        </div>
+        <div>
+        <h2>🍋 Torta de Limão</h2>
+        <p><strong>⏱️ Tempo:</strong> 40 min | <strong>🍽️ Rendimento:</strong> 8 porções | <strong>⭐ Dificuldade:</strong> Média</p>
+
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 1 pacote de biscoito maisena</li>
+          <li><input type="checkbox" /> 4 colheres de sopa de manteiga derretida</li>
+          <li><input type="checkbox" /> 1 lata de leite condensado</li>
+          <li><input type="checkbox" /> 1/2 xícara de suco de limão</li>
+          <li><input type="checkbox" /> 1 lata de creme de leite</li>
+          <li><input type="checkbox" /> Raspas de limão para decorar</li>
+        </ul>
+
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Triture os biscoitos e misture com a manteiga até formar uma farofa úmida.</li>
+          <li>Forre o fundo de uma forma e leve ao forno por 10 minutos.</li>
+          <li>Misture o leite condensado, o suco de limão e o creme de leite até formar um creme.</li>
+          <li>Despeje sobre a base assada e leve à geladeira por 4 horas.</li>
+          <li>Decore com raspas de limão antes de servir.</li>
+        </ol>
+
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+    </section>
+
+      <!-- 2. Sobremesas -->
+    <section id="Gelado-de-Abacaxi" class="receita">
+       <div>
+      <img src="assets/img/receitas/Gelado-de-Abacaxi.jpg" alt="Gelado de Abacaxi" />
+      </div>
+
+      <div>
+        <h2>🍍 Gelado de Abacaxi</h2>
+      <p><strong>⏱️ Tempo:</strong> 30 min + geladeira | <strong>🍽️ Rendimento:</strong> 10 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 abacaxi picado</li>
+        <li><input type="checkbox" /> 1 xícara de açúcar</li>
+        <li><input type="checkbox" /> 1 lata de leite condensado</li>
+        <li><input type="checkbox" /> 1 lata de creme de leite</li>
+        <li><input type="checkbox" /> 1 pacote de gelatina sabor abacaxi</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Cozinhe o abacaxi com o açúcar por 10 minutos e reserve.</li>
+        <li>Prepare a gelatina conforme as instruções da embalagem.</li>
+        <li>Misture o leite condensado, o creme de leite, a gelatina dissolvida e o abacaxi cozido.</li>
+        <li>Leve à geladeira até firmar.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+        <!-- 3. Sobremesas -->
+    <section id="Mousse-de-Morango" class="receita">
+      <div>
+      <img src="assets/img/receitas/Mousse-de-Morango.jpg" alt="Mousse de Morango" />
+      </div>
+      <div>
+        <h2>🍓 Mousse de Morango</h2>
+      <p><strong>⏱️ Tempo:</strong> 20 min + geladeira | <strong>🍽️ Rendimento:</strong> 6 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 caixa de gelatina sabor morango</li>
+        <li><input type="checkbox" /> 1 xícara de água quente</li>
+        <li><input type="checkbox" /> 1 lata de leite condensado</li>
+        <li><input type="checkbox" /> 1 lata de creme de leite</li>
+        <li><input type="checkbox" /> 1 xícara de morangos picados</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Dissolva a gelatina na água quente.</li>
+        <li>Bata no liquidificador com o leite condensado, o creme de leite e os morangos.</li>
+        <li>Leve à geladeira por 4 horas ou até firmar.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+        <!-- 4. Sobremesas -->
+    <section id="Banoffee-na-Taca" class="receita">
+      <div>
+      <img src="assets/img/receitas/Banoffee-na-Taca.jpg" alt="Banoffee na Taça" />
+      </div>
+      <div>
+       <h2>🍌 Banoffee na Taça</h2>
+      <p><strong>⏱️ Tempo:</strong> 25 min | <strong>🍽️ Rendimento:</strong> 4 taças | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 pacote de bolacha maisena</li>
+        <li><input type="checkbox" /> 2 bananas maduras</li>
+        <li><input type="checkbox" /> 1 lata de doce de leite</li>
+        <li><input type="checkbox" /> Chantilly a gosto</li>
+        <li><input type="checkbox" /> Canela em pó para finalizar</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Triture as bolachas e faça uma base no fundo da taça.</li>
+        <li>Adicione rodelas de banana e uma camada generosa de doce de leite.</li>
+        <li>Cubra com chantilly e polvilhe canela.</li>
+        <li>Sirva gelado.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+        <!-- 5. Sobremesas -->
+    <section id="Cocada-Cremosa" class="receita">
+      <div>
+      <img src="assets/img/receitas/Cocada-Cremosa.jpg" alt="Cocada Cremosa" />
+      </div>
+      <div>
+        <h2>🥥 Cocada Cremosa</h2>
+      <p><strong>⏱️ Tempo:</strong> 20 min | <strong>🍽️ Rendimento:</strong> 6 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 lata de leite condensado</li>
+        <li><input type="checkbox" /> 1 vidro de leite de coco (200 ml)</li>
+        <li><input type="checkbox" /> 100 g de coco ralado</li>
+        <li><input type="checkbox" /> 1 colher de sopa de manteiga</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Misture todos os ingredientes em uma panela.</li>
+        <li>Cozinhe em fogo médio, mexendo sempre, até engrossar.</li>
+        <li>Sirva quente ou fria, como preferir.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+ <!------------------- Receitas Fitness ------------------->
+
+      <!-- 1. Receitas Fitness -->
+    <section id="Salada-de-Quinoa" class="receita">
+      <div>
+      <img src="assets/img/receitas/Salada-de-Quinoa.jpg" alt="Salada de Quinoa com Legumes" />
+      </div>
+      <div>
+        <h2>🥗 Salada de Quinoa com Legumes</h2>
+      <p><strong>⏱️ Tempo:</strong> 25 min | <strong>🍽️ Rendimento:</strong> 4 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 xícara de quinoa</li>
+        <li><input type="checkbox" /> 2 xícaras de água</li>
+        <li><input type="checkbox" /> 1 cenoura ralada</li>
+        <li><input type="checkbox" /> 1 pepino picado</li>
+        <li><input type="checkbox" /> 1 tomate picado</li>
+        <li><input type="checkbox" /> Suco de 1 limão</li>
+        <li><input type="checkbox" /> Sal e azeite a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Cozinhe a quinoa na água por 15 minutos e escorra.</li>
+        <li>Deixe esfriar e misture com os legumes picados.</li>
+        <li>Tempere com limão, sal e azeite.</li>
+        <li>Sirva gelada ou em temperatura ambiente.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+     <!-- 2. Receitas Fitness -->
+    <section id="Panqueca-de-Banana" class="receita">
+      <div>
+      <img src="assets/img/receitas/Panqueca-de-Banana.jpg" alt="Panqueca de Banana e Aveia" />
+      </div>
+      <div>
+        <h2>🍌 Panqueca de Banana e Aveia</h2>
+      <p><strong>⏱️ Tempo:</strong> 15 min | <strong>🍽️ Rendimento:</strong> 2 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 banana madura</li>
+        <li><input type="checkbox" /> 2 colheres de sopa de aveia</li>
+        <li><input type="checkbox" /> 1 ovo</li>
+        <li><input type="checkbox" /> Canela a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Amasse a banana e misture com os demais ingredientes.</li>
+        <li>Aqueça uma frigideira antiaderente e despeje a massa.</li>
+        <li>Cozinhe dos dois lados até dourar.</li>
+        <li>Sirva com mel ou frutas frescas.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+        <!-- 3. Receitas Fitness -->
+    <section id="Bolinho-de-Coco" class="receita">
+      <div>
+      <img src="assets/img/receitas/Bolinho-de-Coco.jpg" alt="Bolinho de Coco Low Carb" />
+      </div>
+      <div>
+        <h2>🥥 Bolinho de Coco Low Carb</h2>
+      <p><strong>⏱️ Tempo:</strong> 30 min | <strong>🍽️ Rendimento:</strong> 6 unidades | <strong>⭐ Dificuldade:</strong> Média</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 2 ovos</li>
+        <li><input type="checkbox" /> 1/2 xícara de coco ralado sem açúcar</li>
+        <li><input type="checkbox" /> 2 colheres de sopa de farinha de amêndoas</li>
+        <li><input type="checkbox" /> 1 colher de chá de fermento</li>
+        <li><input type="checkbox" /> Adoçante natural a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Misture todos os ingredientes em uma tigela.</li>
+        <li>Distribua em forminhas untadas ou de silicone.</li>
+        <li>Leve ao forno pré-aquecido a 180°C por 20 minutos.</li>
+        <li>Sirva morno ou frio.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+        <!-- 4. Receitas Fitness -->
+    <section id="Creme-de-Abacate" class="receita">
+      <div>
+      <img src="assets/img/receitas/Creme-de-Abacate.jpg" alt="Creme Proteico de Abacate" />
+      </div>
+      <div>
+      <h2>🥑 Creme Proteico de Abacate</h2>
+      <p><strong>⏱️ Tempo:</strong> 10 min | <strong>🍽️ Rendimento:</strong> 2 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 abacate maduro</li>
+        <li><input type="checkbox" /> 1 scoop de whey protein sabor baunilha</li>
+        <li><input type="checkbox" /> 1 colher de sopa de cacau em pó</li>
+        <li><input type="checkbox" /> Adoçante natural a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Bata todos os ingredientes no liquidificador até formar um creme homogêneo.</li>
+        <li>Leve à geladeira por 30 minutos.</li>
+        <li>Sirva gelado como sobremesa ou pré-treino.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+        <!-- 5. Receitas Fitness -->
+    <section id="Chips-de-Batata-Doce" class="receita">
+      <div>
+      <img src="assets/img/receitas/Chips-de-Batata-Doce.jpg" alt="Chips de Batata-Doce" />
+      </div>
+      <div>
+        <h2>🍠 Chips de Batata-Doce</h2>
+      <p><strong>⏱️ Tempo:</strong> 35 min | <strong>🍽️ Rendimento:</strong> 2 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 batata-doce média</li>
+        <li><input type="checkbox" /> Azeite de oliva</li>
+        <li><input type="checkbox" /> Sal e páprica a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Corte a batata-doce em fatias finas.</li>
+        <li>Tempere com azeite, sal e páprica.</li>
+        <li>Distribua em uma assadeira e leve ao forno a 200°C por 25 minutos ou até dourar.</li>
+        <li>Deixe esfriar para ficarem crocantes.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+ <!------------------- Café da Manhã ------------------->
+
+      <!-- 1. Café da Manhã -->
+    <section id="Pao-de-Queijo-Fit" class="receita">
+      <div>
+      <img src="assets/img/receitas/Pao-de-Queijo-Fit.jpg" alt="Pão de Queijo Fit" />
+      </div>
+      <div>
+        <h2>🍞 Pão de Queijo Fit</h2>
+      <p><strong>⏱️ Tempo:</strong> 30 min | <strong>🍽️ Rendimento:</strong> 10 unidades | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 xícara de polvilho doce</li>
+        <li><input type="checkbox" /> 1 xícara de queijo cottage ou minas frescal</li>
+        <li><input type="checkbox" /> 1 ovo</li>
+        <li><input type="checkbox" /> Sal a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Misture todos os ingredientes até formar uma massa homogênea.</li>
+        <li>Modele bolinhas e coloque em uma assadeira untada.</li>
+        <li>Leve ao forno pré-aquecido a 180°C por cerca de 25 minutos.</li>
+        <li>Sirva quentinho.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+      <!-- 2. Café da Manhã -->
+    <section id="Omelete-Espinafre-Tomate" class="receita">
+    <div></div>
+    <img src="assets/img/receitas/Omelete-Espinafre-Tomate.jpg" alt="Omelete de Espinafre com Tomate" />
+    </div>
+    <div>
+     <h2>🍳 Omelete de Espinafre com Tomate</h2>
+    <p><strong>⏱️ Tempo:</strong> 15 min | <strong>🍽️ Rendimento:</strong> 1 porção | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+    <h3>Ingredientes</h3>
+    <ul>
+      <li><input type="checkbox" /> 2 ovos</li>
+      <li><input type="checkbox" /> 1/2 xícara de espinafre picado</li>
+      <li><input type="checkbox" /> 1 tomate picado</li>
+      <li><input type="checkbox" /> Sal e pimenta a gosto</li>
+      <li><input type="checkbox" /> Azeite para untar</li>
+    </ul>
+
+    <h3>Modo de Preparo</h3>
+    <ol>
+      <li>Bata os ovos com sal e pimenta.</li>
+      <li>Adicione o espinafre e o tomate.</li>
+      <li>Aqueça uma frigideira com azeite e despeje a mistura.</li>
+      <li>Cozinhe em fogo baixo até firmar e dourar dos dois lados.</li>
+    </ol>
+
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+    </div>
+    </section>
+
+      <!-- 3. Café da Manhã -->
+    <section id="Mingau-Aveia-Frutas" class="receita">
+      <div>
+      <img src="assets/img/receitas/Mingau-Aveia-Frutas.jpg" alt="Mingau de Aveia com Frutas" />
+      </div>
+      <div>
+        <h2>🥣 Mingau de Aveia com Frutas</h2>
+      <p><strong>⏱️ Tempo:</strong> 10 min | <strong>🍽️ Rendimento:</strong> 2 porções | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 xícara de leite vegetal ou desnatado</li>
+        <li><input type="checkbox" /> 4 colheres de sopa de aveia em flocos</li>
+        <li><input type="checkbox" /> 1 banana picada</li>
+        <li><input type="checkbox" /> 1 colher de chá de mel ou adoçante</li>
+        <li><input type="checkbox" /> Frutas vermelhas para decorar</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Leve o leite e a aveia ao fogo baixo, mexendo sempre.</li>
+        <li>Quando começar a engrossar, adicione a banana e o mel.</li>
+        <li>Cozinhe por mais 2 minutos e desligue.</li>
+        <li>Sirva com frutas vermelhas por cima.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+        <!-- 4. Café da Manhã -->
+    <section id="Smoothie-Morango-Iogurte" class="receita">
+      <div>
+      <img src="assets/img/receitas/Smoothie-Morango-Iogurte.jpg" alt="Smoothie de Morango com Iogurte" />
+      </div>
+      <div>
+        <h2>🍓 Smoothie de Morango com Iogurte</h2>
+      <p><strong>⏱️ Tempo:</strong> 5 min | <strong>🍽️ Rendimento:</strong> 2 copos | <strong>⭐ Dificuldade:</strong> Muito fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 xícara de morangos congelados</li>
+        <li><input type="checkbox" /> 1 pote de iogurte natural</li>
+        <li><input type="checkbox" /> 1/2 banana</li>
+        <li><input type="checkbox" /> 1 colher de chá de mel</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Bata todos os ingredientes no liquidificador até ficar cremoso.</li>
+        <li>Sirva imediatamente.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+        <!-- 5. Café da Manhã -->
+    <section id="Tapioca-Frango-Ricota" class="receita">
+       <div>
+      <img src="assets/img/receitas/Tapioca-Frango-Ricota.jpg" alt="Tapioca com Recheio de Frango e Ricota" />
+      </div>
+      <div>
+        <h2>🥯 Tapioca com Recheio de Frango e Ricota</h2>
+      <p><strong>⏱️ Tempo:</strong> 20 min | <strong>🍽️ Rendimento:</strong> 2 unidades | <strong>⭐ Dificuldade:</strong> Fácil</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 4 colheres de sopa de goma de tapioca</li>
+        <li><input type="checkbox" /> 1/2 xícara de frango desfiado</li>
+        <li><input type="checkbox" /> 2 colheres de sopa de ricota amassada</li>
+        <li><input type="checkbox" /> Sal, azeite e orégano a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Aqueça uma frigideira e espalhe a goma de tapioca até formar o disco.</li>
+        <li>Recheie com o frango misturado à ricota e temperos.</li>
+        <li>Feche a tapioca e deixe dourar dos dois lados.</li>
+        <li>Sirva quente.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+ <!------------------- Lanche da Tarde ------------------->
+
+      <!-- 1. Lanche da Tarde -->
+    <section id="Sanduiche-Natural-Frango" class="receita">
+      <div></div>
+      <img src="assets/img/receitas/Sanduiche-Natural-Frango.jpg" alt="Sanduíche Natural de Frango" />
+      </div>
+      <div>
+      <h2>🥪 Sanduíche Natural de Frango</h2>
+      <p><strong>⏱️ Tempo:</strong> 20 min | <strong>🍽️ Rendimento:</strong> 2 unidades | <strong>⭐ Dificuldade:</strong> Fácil | <strong>🔥 Calorias:</strong> 280 kcal por unidade</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 2 fatias de pão integral</li>
+        <li><input type="checkbox" /> 1/2 xícara de frango desfiado</li>
+        <li><input type="checkbox" /> 2 colheres de sopa de cenoura ralada</li>
+        <li><input type="checkbox" /> 1 colher de sopa de iogurte natural</li>
+        <li><input type="checkbox" /> Folhas de alface</li>
+        <li><input type="checkbox" /> Sal e limão a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Misture o frango com cenoura, iogurte, sal e limão.</li>
+        <li>Monte o sanduíche com alface e o recheio entre as fatias de pão.</li>
+        <li>Sirva fresco ou embrulhe para levar.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+        <!-- 2. Lanche da Tarde -->
+    <section id="Pao-Batata-Chia" class="receita">
+       <div>
+      <img src="assets/img/receitas/Pao-Batata-Chia.jpg" alt="Pão de Batata Doce com Chia" />
+      </div>
+      <div>
+        <h2>🥯 Pão de Batata Doce com Chia</h2>
+      <p><strong>⏱️ Tempo:</strong> 35 min | <strong>🍽️ Rendimento:</strong> 6 unidades | <strong>⭐ Dificuldade:</strong> Média | <strong>🔥 Calorias:</strong> 150 kcal por unidade</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 xícara de batata doce cozida e amassada</li>
+        <li><input type="checkbox" /> 1 ovo</li>
+        <li><input type="checkbox" /> 2 colheres de sopa de farinha de aveia</li>
+        <li><input type="checkbox" /> 1 colher de sopa de chia</li>
+        <li><input type="checkbox" /> 1 colher de chá de fermento</li>
+        <li><input type="checkbox" /> Sal a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Misture todos os ingredientes até formar uma massa homogênea.</li>
+        <li>Modele bolinhas e coloque em forma untada.</li>
+        <li>Leve ao forno a 180°C por 25 minutos ou até dourar.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+        <!-- 3. Lanche da Tarde -->
+    <section id="Shake-Banana-Amendoim" class="receita">
+       <div>
+      <img src="assets/img/receitas/Shake-Banana-Amendoim.jpg" alt="Shake de Banana com Pasta de Amendoim" />
+      </div>
+      <div>
+        <h2>🍌 Shake de Banana com Pasta de Amendoim</h2>
+      <p><strong>⏱️ Tempo:</strong> 5 min | <strong>🍽️ Rendimento:</strong> 1 copo | <strong>⭐ Dificuldade:</strong> Muito fácil | <strong>🔥 Calorias:</strong> 320 kcal por copo</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 banana congelada</li>
+        <li><input type="checkbox" /> 1 colher de sopa de pasta de amendoim</li>
+        <li><input type="checkbox" /> 200 ml de leite vegetal</li>
+        <li><input type="checkbox" /> Canela a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Bata todos os ingredientes no liquidificador até ficar cremoso.</li>
+        <li>Sirva imediatamente com gelo, se desejar.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+        <!-- 4. Lanche da Tarde -->
+    <section id="Muffin-Maca-Canela" class="receita">
+      <div>
+      <img src="assets/img/receitas/Muffin-Maca-Canela.jpg" alt="Muffin Integral de Maçã e Canela" />
+      </div>
+      <div>
+        <h2>🧁 Muffin Integral de Maçã e Canela</h2>
+      <p><strong>⏱️ Tempo:</strong> 40 min | <strong>🍽️ Rendimento:</strong> 8 unidades | <strong>⭐ Dificuldade:</strong> Média | <strong>🔥 Calorias:</strong> 180 kcal por unidade</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 xícara de farinha integral</li>
+        <li><input type="checkbox" /> 1 maçã picada</li>
+        <li><input type="checkbox" /> 2 ovos</li>
+        <li><input type="checkbox" /> 1/2 xícara de leite vegetal</li>
+        <li><input type="checkbox" /> 1 colher de sopa de mel</li>
+        <li><input type="checkbox" /> 1 colher de chá de canela</li>
+        <li><input type="checkbox" /> 1 colher de chá de fermento</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Misture todos os ingredientes em uma tigela.</li>
+        <li>Distribua em forminhas de muffin.</li>
+        <li>Leve ao forno a 180°C por 30 minutos.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+        <!-- 5. Lanche da Tarde -->
+    <section id="Mix-Oleaginosas-Frutas" class="receita">
+      <div>
+      <img src="assets/img/receitas/Mix-Oleaginosas-Frutas.jpg" alt="Mix de Oleaginosas com Frutas Secas" />
+      </div>
+      <div>
+      <h2>🍿 Mix de Oleaginosas com Frutas Secas</h2>
+      <p><strong>⏱️ Tempo:</strong> 5 min | <strong>🍽️ Rendimento:</strong> 1 porção | <strong>⭐ Dificuldade:</strong> Muito fácil | <strong>🔥 Calorias:</strong> 250 kcal por porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 colher de sopa de castanha-do-pará</li>
+        <li><input type="checkbox" /> 1 colher de sopa de amêndoas</li>
+        <li><input type="checkbox" /> 1 colher de sopa de nozes</li>
+        <li><input type="checkbox" /> 1 colher de sopa de uvas-passas</li>
+        <li><input type="checkbox" /> 1 colher de sopa de damasco picado</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Misture todos os ingredientes em um pote ou tigela.</li>
+        <li>Sirva como lanche rápido ou leve na bolsa.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+     <!------------------- Jantar ------------------->
+
+      <!-- 1. Jantar -->
+    <section id="Escondidinho-Mandioca-Carne" class="receita">
+      <div>
+      <img src="assets/img/receitas/Escondidinho-Mandioca-Carne.jpg" alt="Escondidinho de Mandioca com Carne Moída" />
+      </div>
+      <div>
+      <h2>🥘 Escondidinho de Mandioca com Carne Moída</h2>
+      <p><strong>⏱️ Tempo:</strong> 40 min | <strong>🍽️ Rendimento:</strong> 4 porções | <strong>⭐ Dificuldade:</strong> Média | <strong>🔥 Calorias:</strong> 320 kcal por porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 500g de mandioca cozida</li>
+        <li><input type="checkbox" /> 300g de carne moída</li>
+        <li><input type="checkbox" /> 1 cebola picada</li>
+        <li><input type="checkbox" /> 2 colheres de sopa de requeijão</li>
+        <li><input type="checkbox" /> Sal, pimenta e cheiro-verde a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Amasse a mandioca e misture com o requeijão até formar um purê.</li>
+        <li>Refogue a carne com cebola, sal, pimenta e cheiro-verde.</li>
+        <li>Monte em camadas: purê, carne, purê. Leve ao forno por 20 minutos.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+          <!-- 2. Jantar -->
+    <section id="Quibe-Abobora-Recheado" class="receita">
+      <div>
+      <img src="assets/img/receitas/Quibe-Abobora-Recheado.jpg" alt="Quibe de Abóbora Recheado com Ricota" />
+      </div>
+      <div>
+        <h2>🌿 Quibe de Abóbora Recheado com Ricota</h2>
+      <p><strong>⏱️ Tempo:</strong> 50 min | <strong>🍽️ Rendimento:</strong> 6 porções | <strong>⭐ Dificuldade:</strong> Média | <strong>🔥 Calorias:</strong> 280 kcal por porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 2 xícaras de abóbora cozida e amassada</li>
+        <li><input type="checkbox" /> 1 xícara de trigo para quibe</li>
+        <li><input type="checkbox" /> 200g de ricota amassada</li>
+        <li><input type="checkbox" /> Hortelã, sal e azeite a gosto</li>
+        <li><input type="checkbox" /> 1 cebola ralada</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Hidrate o trigo para quibe e misture com a abóbora, cebola e temperos.</li>
+        <li>Divida a massa em duas partes e recheie com a ricota.</li>
+        <li>Leve ao forno por 30 minutos até dourar.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+          <!-- 3. Jantar -->
+    <section id="Sopa-Legumes-Frango" class="receita">
+      
+      <div>
+      <img src="assets/img/receitas/Sopa-Legumes-Frango.jpg" alt="Sopa de Legumes com Frango Desfiado" />
+      </div>
+      <div>
+        <h2>🍲 Sopa de Legumes com Frango Desfiado</h2>
+      <p><strong>⏱️ Tempo:</strong> 30 min | <strong>🍽️ Rendimento:</strong> 3 porções | <strong>⭐ Dificuldade:</strong> Fácil | <strong>🔥 Calorias:</strong> 220 kcal por porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 cenoura picada</li>
+        <li><input type="checkbox" /> 1 batata picada</li>
+        <li><input type="checkbox" /> 1 abobrinha picada</li>
+        <li><input type="checkbox" /> 200g de frango cozido e desfiado</li>
+        <li><input type="checkbox" /> Caldo de legumes, sal e cheiro-verde</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Cozinhe os legumes no caldo de legumes até ficarem macios.</li>
+        <li>Adicione o frango desfiado e ajuste os temperos.</li>
+        <li>Sirva quente com cheiro-verde por cima.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+          <!-- 4. Jantar -->
+    <section id="Panqueca-Integral-Espinaca" class="receita">
+      <div>
+      <img src="assets/img/receitas/Panqueca-Integral-Espinaca.jpg" alt="Panqueca Integral de Espinafre com Cottage" />
+      </div>
+      <div>
+        <h2>🥬 Panqueca Integral de Espinafre com Cottage</h2>
+      <p><strong>⏱️ Tempo:</strong> 25 min | <strong>🍽️ Rendimento:</strong> 4 porções | <strong>⭐ Dificuldade:</strong> Fácil | <strong>🔥 Calorias:</strong> 190 kcal por porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 xícara de farinha integral</li>
+        <li><input type="checkbox" /> 1 ovo</li>
+        <li><input type="checkbox" /> 1/2 xícara de leite</li>
+        <li><input type="checkbox" /> 1 xícara de espinafre cozido</li>
+        <li><input type="checkbox" /> 200g de queijo cottage</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Bata os ingredientes da massa e prepare as panquecas em frigideira antiaderente.</li>
+        <li>Recheie com espinafre e cottage.</li>
+        <li>Sirva com molho de tomate natural.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+          <!-- 5. Jantar -->
+    <section id="Arroz-Colorido-Proteico" class="receita">
+      <div>
+      <img src="assets/img/receitas/Arroz-Colorido-Proteico.jpg" alt="Arroz Colorido com Proteína de Soja" />
+      </div>
+      <div>
+        <h2>🍚 Arroz Colorido com Proteína de Soja</h2>
+      <p><strong>⏱️ Tempo:</strong> 20 min | <strong>🍽️ Rendimento:</strong> 3 porções | <strong>⭐ Dificuldade:</strong> Fácil | <strong>🔥 Calorias:</strong> 230 kcal por porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li><input type="checkbox" /> 1 xícara de arroz integral cozido</li>
+        <li><input type="checkbox" /> 1/2 xícara de proteína de soja hidratada</li>
+        <li><input type="checkbox" /> 1/2 cenoura ralada</li>
+        <li><input type="checkbox" /> 1/2 pimentão vermelho picado</li>
+        <li><input type="checkbox" /> Azeite, sal e cúrcuma a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Refogue os legumes e a proteína de soja no azeite com cúrcuma.</li>
+        <li>Adicione o arroz cozido e misture bem.</li>
+        <li>Sirva quente com folhas verdes.</li>
+      </ol>
+
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+      </div>
+    </section>
+
+     <!------------------- Receitas Natalinas ------------------->
+
+      <!-- 1. Receitas Natalinas -->
+       <section id="Salpicao-Frango-Natalino" class="receita">
+        <div>
+        <img src="assets/img/receitas/Salpicao-Frango-Natalino.jpg" alt="Salpicão de Frango Natalino" />
+        </div>
+        <div>
+          <h2>🎄 Salpicão de Frango Natalino</h2>
+        <p><strong>⏱️ Tempo:</strong> 30 min | <strong>🍽️ Rendimento:</strong> 6 porções | <strong>⭐ Dificuldade:</strong> Fácil | <strong>🔥 Calorias:</strong> 280 kcal por porção</p>
+
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 2 xícaras de frango cozido e desfiado</li>
+          <li><input type="checkbox" /> 1 cenoura ralada</li>
+          <li><input type="checkbox" /> 1 maçã picada</li>
+          <li><input type="checkbox" /> 1/2 xícara de uvas-passas</li>
+          <li><input type="checkbox" /> 3 colheres de sopa de maionese</li>
+        </ul>
+
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Misture todos os ingredientes em uma tigela grande.</li>
+          <li>Leve à geladeira por 1 hora antes de servir.</li>
+        </ol>
+
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+      <!-- 2. Receitas Natalinas -->
+      <section id="Farofa-Natalina-Frutas" class="receita">
+         <div>
+        <img src="assets/img/receitas/Farofa-Natalina-Frutas.jpg" alt="Farofa Natalina com Frutas Secas" />
+        </div>
+        <div>
+          <h2>🍽️ Farofa Natalina com Frutas Secas</h2>
+        <p><strong>⏱️ Tempo:</strong> 20 min | <strong>🍽️ Rendimento:</strong> 5 porções | <strong>⭐ Dificuldade:</strong> Fácil | <strong>🔥 Calorias:</strong> 210 kcal por porção</p>
+
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 2 xícaras de farinha de mandioca</li>
+          <li><input type="checkbox" /> 1 cebola picada</li>
+          <li><input type="checkbox" /> 1/2 xícara de damasco picado</li>
+          <li><input type="checkbox" /> 1/2 xícara de uvas-passas</li>
+          <li><input type="checkbox" /> 2 colheres de sopa de manteiga</li>
+        </ul>
+
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Refogue a cebola na manteiga até dourar.</li>
+          <li>Adicione as frutas secas e a farinha, misturando bem.</li>
+          <li>Cozinhe por 5 minutos e sirva quente.</li>
+        </ol>
+
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 3. Receitas Natalinas -->
+      <section id="Tender-Molho-Laranja" class="receita">
+         <div>
+        <img src="assets/img/receitas/Tender-Molho-Laranja.jpg" alt="Tender ao Molho de Laranja" />
+        </div>
+        <div>
+        <h2>🍊 Tender ao Molho de Laranja</h2>
+        <p><strong>⏱️ Tempo:</strong> 1h | <strong>🍽️ Rendimento:</strong> 8 porções | <strong>⭐ Dificuldade:</strong> Média | <strong>🔥 Calorias:</strong> 350 kcal por porção</p>
+
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 1 tender bolinha</li>
+          <li><input type="checkbox" /> 1 xícara de suco de laranja</li>
+          <li><input type="checkbox" /> 2 colheres de sopa de mel</li>
+          <li><input type="checkbox" /> 1 colher de sopa de mostarda</li>
+          <li><input type="checkbox" /> Cravos-da-índia para decorar</li>
+        </ul>
+
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Faça cortes superficiais no tender e espete os cravos.</li>
+          <li>Misture o suco, mel e mostarda e regue o tender.</li>
+          <li>Leve ao forno por 40 minutos, regando com o molho a cada 10 minutos.</li>
+        </ol>
+
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 4. Receitas Natalinas -->
+      <section id="Arroz-Natalino-Castanhas" class="receita">
+        <div>
+        <img src="assets/img/receitas/Arroz-Natalino-Castanhas.jpg" alt="Arroz Natalino com Castanhas" />
+        </div>
+        <div>
+          <h2>🍚 Arroz Natalino com Castanhas</h2>
+        <p><strong>⏱️ Tempo:</strong> 25 min | <strong>🍽️ Rendimento:</strong> 6 porções | <strong>⭐ Dificuldade:</strong> Fácil | <strong>🔥 Calorias:</strong> 240 kcal por porção</p>
+
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 2 xícaras de arroz cozido</li>
+          <li><input type="checkbox" /> 1/2 xícara de castanha-do-pará picada</li>
+          <li><input type="checkbox" /> 1/2 xícara de cenoura ralada</li>
+          <li><input type="checkbox" /> 1/4 xícara de salsinha picada</li>
+          <li><input type="checkbox" /> Azeite e sal a gosto</li>
+        </ul>
+
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Refogue a cenoura e as castanhas no azeite.</li>
+          <li>Adicione o arroz e misture bem.</li>
+          <li>Finalize com salsinha e sirva.</li>
+        </ol>
+
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+          <!-- 5. Receitas Natalinas -->
+      <section id="Rabanada-Assada-Canela" class="receita">
+        
+        <div>
+        <img src="assets/img/receitas/Rabanada-Assada-Canela.jpg" alt="Rabanada Assada com Canela" />
+        </div>
+        <div>
+        <h2>🍞 Rabanada Assada com Canela</h2>
+        <p><strong>⏱️ Tempo:</strong> 35 min | <strong>🍽️ Rendimento:</strong> 10 unidades | <strong>⭐ Dificuldade:</strong> Fácil | <strong>🔥 Calorias:</strong> 150 kcal por unidade</p>
+
+        <h3>Ingredientes</h3>
+        <ul>
+          <li><input type="checkbox" /> 10 fatias de pão francês amanhecido</li>
+          <li><input type="checkbox" /> 2 ovos</li>
+          <li><input type="checkbox" /> 1 xícara de leite</li>
+          <li><input type="checkbox" /> 1/2 xícara de açúcar</li>
+          <li><input type="checkbox" /> Canela em pó a gosto</li>
+        </ul>
+
+        <h3>Modo de Preparo</h3>
+        <ol>
+          <li>Misture os ovos com o leite e passe as fatias de pão.</li>
+          <li>Coloque em assadeira untada e leve ao forno por 25 minutos.</li>
+          <li>Polvilhe com açúcar e canela antes de servir.</li>
+        </ol>
+
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">🔝 Voltar ao topo</button>
+        </div>
+      </section>
+
+</main>
+<footer>
+    
+    <div class="container">
+      <h2>🍝 Receitário da Vó</h2>
+    <div class="links">
+      <a href="Sobre.html">Sobre</a>
+      <a href="Contato.html">Contato</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Receitas Deliciosas. Todos os direitos reservados.</p>
+  </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

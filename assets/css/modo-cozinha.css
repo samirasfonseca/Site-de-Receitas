@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff3b0; /* Modo escuro */
+  color: #f5f5f5;
+}
+.modo-cozinhas {
+  gap: 5rem;
+}
+
+.modo-cozinha {
+  height: 53vh;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.modo-cozinha h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #8d0801;
+  font-weight: 900;
+}
+
+.etapa {
+  background-color: #001427;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.etapa h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.etapa p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type="number"] {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+}
+
+.etapa button {
+  background-color: #8d0801;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.etapa button:hover {
+  background-color: #e67e22;
+}
+
+.etapa-Final {
+  margin-bottom: 8rem;
+  color: #001427;
+}
+
+@media (max-width: 768px) {
+  .modo-cozinha {
+    height: auto;
+    padding: 1.5rem 1rem;
+    margin: 1rem auto;
+  }
+
+  .modo-cozinha h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .etapa {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .etapa h2 {
+    font-size: 1.3rem;
+  }
+
+  .etapa p {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input[type="number"] {
+    font-size: 1rem;
+    width: 60px;
+    padding: 0.3rem;
+  }
+
+  .etapa button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .etapa-Final {
+    margin-bottom: 4rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modo-cozinha h1 {
+    font-size: 1.4rem;
+  }
+
+  .etapa h2 {
+    font-size: 1.2rem;
+  }
+
+  .etapa p {
+    font-size: 0.95rem;
+  }
+
+  .etapa button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+

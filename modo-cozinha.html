@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/modo-cozinha.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <title>Modo Cozinha</title>
+</head>
+<body>
+    <nav>
+
+      <h1>Modo Cozinha</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="receita-individual.html">Receita Individual</a>
+        <a href="modo-cozinha.html">Modo Cozinha</a>
+        <a href="Sobre.html">Sobre</a>
+        <a href="Contato.html">Contato</a>
+      </div>
+    </nav>
+
+<section class="modo-cozinhas">
+<section id="receita-bolo-cenoura" class="modo-cozinha">
+  <h1>Modo Cozinha: Bolo de Cenoura</h1>
+
+  <div class="etapa" id="cenoura-etapa-1">
+    <h2>Etapa 1</h2>
+    <p>Bata no liquidificador a cenoura, os ovos e o óleo.</p>
+    <label>⏲️ Timer: <input type="number" value="2" min="1" max="60" /> min</label>
+    <button onclick="proximaEtapa('cenoura-etapa-1', 'cenoura-etapa-2')">Próximo passo</button>
+  </div>
+
+  <div class="etapa" id="cenoura-etapa-2" style="display: none;">
+    <h2>Etapa 2</h2>
+    <p>Adicione o açúcar e bata novamente.</p>
+    <label>⏲️ Timer: <input type="number" value="1" min="1" max="60" /> min</label>
+    <button onclick="proximaEtapa('cenoura-etapa-2', 'cenoura-etapa-3')">Próximo passo</button>
+  </div>
+
+  <div class="etapa" id="cenoura-etapa-3" style="display: none;">
+    <h2>Etapa 3</h2>
+    <p>Misture a farinha e o fermento.</p>
+    <label>⏲️ Timer: <input type="number" value="3" min="1" max="60" /> min</label>
+    <button onclick="proximaEtapa('cenoura-etapa-3', 'cenoura-etapa-4')">Próximo passo</button>
+  </div>
+
+  <div class="etapa" id="cenoura-etapa-4" style="display: none;">
+    <h2>Etapa Final</h2>
+    <p>Leve ao forno pré-aquecido a 180°C por 45 minutos.</p>
+    <label>⏲️ Timer: <input type="number" value="45" min="1" max="120" /> min</label>
+    <button onclick="finalizar('cenoura')">Finalizar</button>
+  </div>
+
+  <div class="etapa-Final" id="cenoura-finalizado" style="display: none;">
+    <h2>✅ Receita finalizada!</h2>
+    <p>Bom apetite!</p>
+  </div>
+</section>
+
+<section id="receita-feijao-tropeiro" class="modo-cozinha">
+  <h1>Modo Cozinha: Feijão Tropeiro</h1>
+
+  <div class="etapa" id="tropeiro-etapa-1">
+    <h2>Etapa 1</h2>
+    <p>Cozinhe o feijão até ficar macio.</p>
+    <label>⏲️ Timer: <input type="number" value="30" min="1" max="120" /> min</label>
+    <button onclick="proximaEtapa('tropeiro-etapa-1', 'tropeiro-etapa-2')">Próximo passo</button>
+  </div>
+
+  <div class="etapa" id="tropeiro-etapa-2" style="display: none;">
+    <h2>Etapa 2</h2>
+    <p>Frite o bacon e a linguiça.</p>
+    <label>⏲️ Timer: <input type="number" value="10" min="1" max="60" /> min</label>
+    <button onclick="proximaEtapa('tropeiro-etapa-2', 'tropeiro-etapa-3')">Próximo passo</button>
+  </div>
+
+  <div class="etapa" id="tropeiro-etapa-3" style="display: none;">
+    <h2>Etapa 3</h2>
+    <p>Adicione o feijão, ovos mexidos e farinha de mandioca.</p>
+    <label>⏲️ Timer: <input type="number" value="5" min="1" max="60" /> min</label>
+    <button onclick="finalizar('tropeiro')">Finalizar</button>
+  </div>
+
+  <div class="etapa-Final" id="tropeiro-finalizado" style="display: none;">
+    <h2>✅ Receita finalizada!</h2>
+    <p>Delícia mineira pronta!</p>
+  </div>
+</section>
+
+<section id="receita-pudim" class="modo-cozinha">
+  <h1>Modo Cozinha: Pudim de Leite</h1>
+  <div class="etapa" id="pudim-etapa-1">
+    <h2>Etapa 1</h2>
+    <p>Bata leite condensado, leite e ovos no liquidificador.</p>
+    <label>⏲️ <input type="number" value="2" /> min</label>
+    <button onclick="proximaEtapa('pudim-etapa-1', 'pudim-etapa-2')">Próximo</button>
+  </div>
+  <div class="etapa" id="pudim-etapa-2" style="display:none;">
+    <h2>Etapa 2</h2>
+    <p>Caramelize o açúcar na forma.</p>
+    <label>⏲️ <input type="number" value="5" /> min</label>
+    <button onclick="proximaEtapa('pudim-etapa-2', 'pudim-etapa-3')">Próximo</button>
+  </div>
+  <div class="etapa" id="pudim-etapa-3" style="display:none;">
+    <h2>Etapa Final</h2>
+    <p>Asse em banho-maria por 1 hora.</p>
+    <label>⏲️ <input type="number" value="60" /> min</label>
+    <button onclick="finalizar('pudim')">Finalizar</button>
+  </div>
+  <div class="etapa-Final" id="pudim-finalizado" style="display:none;">
+    <h2>✅ Receita finalizada!</h2>
+    <p>Delícia pronta para gelar!</p>
+  </div>
+</section>
+
+<section id="receita-empadinha" class="modo-cozinha">
+  <h1>Modo Cozinha: Empadinha de Frango</h1>
+  <div class="etapa" id="empadinha-etapa-1">
+    <h2>Etapa 1</h2>
+    <p>Refogue frango com cebola e alho.</p>
+    <label>⏲️ <input type="number" value="10" /> min</label>
+    <button onclick="proximaEtapa('empadinha-etapa-1', 'empadinha-etapa-2')">Próximo</button>
+  </div>
+  <div class="etapa" id="empadinha-etapa-2" style="display:none;">
+    <h2>Etapa 2</h2>
+    <p>Prepare a massa com farinha, manteiga e gema.</p>
+    <label>⏲️ <input type="number" value="15" /> min</label>
+    <button onclick="proximaEtapa('empadinha-etapa-2', 'empadinha-etapa-3')">Próximo</button>
+  </div>
+  <div class="etapa" id="empadinha-etapa-3" style="display:none;">
+    <h2>Etapa Final</h2>
+    <p>Monte as empadinhas e asse por 30 min.</p>
+    <label>⏲️ <input type="number" value="30" /> min</label>
+    <button onclick="finalizar('empadinha')">Finalizar</button>
+  </div>
+  <div class="etapa-Final" id="empadinha-finalizado" style="display:none;">
+    <h2>✅ Receita finalizada!</h2>
+    <p>Crocantes e irresistíveis!</p>
+  </div>
+</section>
+
+<section id="receita-cuscuz" class="modo-cozinha">
+  <h1>Modo Cozinha: Cuscuz Nordestino</h1>
+  <div class="etapa" id="cuscuz-etapa-1">
+    <h2>Etapa 1</h2>
+    <p>Hidrate a farinha de milho com água e sal.</p>
+    <label>⏲️ <input type="number" value="5" /> min</label>
+    <button onclick="proximaEtapa('cuscuz-etapa-1', 'cuscuz-etapa-2')">Próximo</button>
+  </div>
+  <div class="etapa" id="cuscuz-etapa-2" style="display:none;">
+    <h2>Etapa Final</h2>
+    <p>Cozinhe na cuscuzeira por 15 min.</p>
+    <label>⏲️ <input type="number" value="15" /> min</label>
+    <button onclick="finalizar('cuscuz')">Finalizar</button>
+  </div>
+  <div class="etapa-Final" id="cuscuz-finalizado" style="display:none;">
+    <h2>✅ Receita finalizada!</h2>
+    <p>Pronto para servir com manteiga!</p>
+  </div>
+</section>
+
+<section id="receita-brigadeiro" class="modo-cozinha">
+  <h1>Modo Cozinha: Brigadeiro</h1>
+  <div class="etapa" id="brigadeiro-etapa-1">
+    <h2>Etapa 1</h2>
+    <p>Misture leite condensado, chocolate e manteiga.</p>
+    <label>⏲️ <input type="number" value="1" /> min</label>
+    <button onclick="proximaEtapa('brigadeiro-etapa-1', 'brigadeiro-etapa-2')">Próximo</button>
+  </div>
+  <div class="etapa" id="brigadeiro-etapa-2" style="display:none;">
+    <h2>Etapa Final</h2>
+    <p>Cozinhe até desgrudar da panela.</p>
+    <label>⏲️ <input type="number" value="10" /> min</label>
+    <button onclick="finalizar('brigadeiro')">Finalizar</button>
+  </div>
+  <div class="etapa-Final" id="brigadeiro-finalizado" style="display:none;">
+    <h2>✅ Receita finalizada!</h2>
+    <p>Enrole e passe no granulado!</p>
+  </div>
+</section>
+
+<section id="receita-canjica" class="modo-cozinha">
+  <h1>Modo Cozinha: Canjica com Amendoim</h1>
+  <div class="etapa" id="canjica-etapa-1">
+    <h2>Etapa 1</h2>
+    <p>Cozinhe a canjica até ficar macia.</p>
+    <label>⏲️ <input type="number" value="40" /> min</label>
+    <button onclick="proximaEtapa('canjica-etapa-1', 'canjica-etapa-2')">Próximo</button>
+  </div>
+  <div class="etapa" id="canjica-etapa-2" style="display:none;">
+    <h2>Etapa Final</h2>
+    <p>Adicione leite, açúcar, coco e amendoim.</p>
+    <label>⏲️ <input type="number" value="15" /> min</label>
+    <button onclick="finalizar('canjica')">Finalizar</button>
+  </div>
+  <div class="etapa-Final" id="canjica-finalizado" style="display:none;">
+    <h2>✅ Receita finalizada!</h2>
+    <p>Quentinha e cheia de sabor!</p>
+  </div>
+</section>
+
+<footer>
+    
+    <div class="container">
+      <h2>🍝 Receitário da Vó</h2>
+    <div class="links">
+      <a href="Sobre.html">Sobre</a>
+      <a href="Contato.html">Contato</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2025 Receitas Deliciosas. Todos os direitos reservados.</p>
+  </div>
+  </footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

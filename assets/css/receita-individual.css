@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff3b0;
+}
+
+header {
+  position: fixed;
+  background-color: #fff3b0;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/*----------------------------------------------*/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100vw;
+  max-width: 1200px; 
+  padding: 0.5rem;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropbtn {
+
+  background-color: #B71C1C;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  height: 5rem;
+  width: 8rem;
+}
+
+.dropbtn:hover {
+  background-color: #8E1414; 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fffaf4;
+  width: 100%;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0d9d9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .dropbtn {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .dropdown-content a {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+
+/*---------------------------------------*/
+
+.receita-individual {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100vw;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background: #f4d58d;
+  border-radius: 10px;
+}
+
+.receita-individual h2 {
+  font-size: 2rem;
+}
+
+.receita {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12rem 0 2rem 0 ;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  gap: 2rem;
+}
+
+.receita li {
+  font-size: 1rem;
+}
+
+.receita img {
+  margin: 2rem 0 0.5rem 0;
+  width: 23rem;
+  height: 22rem;
+  border-radius: 8px;
+}
+
+button {
+  background: #e02504;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #e76f3c;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffb347;
+  color: white;
+}
+
+
