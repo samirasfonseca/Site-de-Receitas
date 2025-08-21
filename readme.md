@@ -36,18 +36,18 @@ O site foi desenvolvido com foco em dispositivos móveis, utilizando media queri
 
 ## 📂 Estrutura do Projeto
 
-📁 -Receitas-da-vovo/
-├── contato.html 
-├── index.html 
-├── modo-cozinha.html 
-├──  README.md
-|── receita-individual.html 
-├── sobre.html 
-├── style.css 
-📁 -assets/ 
-├── -css 
-├── -img
-└──  -js
+📁 -Receitas-da-vovo/ <br>
+├── contato.html <br>
+├── index.html <br>
+├── modo-cozinha.html <br>
+├──  README.md <br>
+|── receita-individual.html <br>
+├── sobre.html <br>
+├── style.css <br>
+📁 -assets/ <br>
+├── -css <br>
+├── -img <br>
+└──  -js <br>
 
 
 ---
