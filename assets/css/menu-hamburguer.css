@@ -1,0 +1,30 @@
+/* estilo padrão (mobile first) */
+.menu-toggle {
+  display: block; /* aparece no celular */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar {
+  display: none; /* começa escondido no celular */
+  flex-direction: column;
+}
+
+.navbar.active {
+  display: flex; /* aparece quando clica no botão */
+}
+
+/* telas grandes (desktop) */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* esconde o hamburguer no desktop */
+  }
+
+  .navbar {
+    display: flex !important; /* sempre visível no desktop */
+    flex-direction: row;
+    gap: 1rem;
+  }
+}

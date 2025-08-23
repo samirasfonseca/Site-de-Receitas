@@ -13,15 +13,6 @@ nav h1 {
   margin: 0;
 }
 
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #f4d58d;
-  cursor: pointer;
-}
-
 .navbar {
   display: flex;
   gap: 1rem;
@@ -40,24 +31,4 @@ nav h1 {
   background-color: #708d8141;
 }
 
-/* Responsivo para telas menores */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
 
-  .navbar {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar.active {
-    display: flex;
-  }
-
-  .navbar a {
-    padding: 1rem;
-    border-top: 1px solid #f4d58d33;
-  }
-}

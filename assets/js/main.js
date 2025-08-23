@@ -1,7 +1,11 @@
 
 /*----------- Menu Hamburguer ------------*/
-function toggleMenu() {
-    document.getElementById("navbar").classList.toggle("active");
+  function toggleMenu() {
+    // só funciona se a largura da tela for menor que 768px
+    if (window.innerWidth <= 768) {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
   }
 /*--------------------------------------------------------------*/
 /*----------- Depoimentos do Index.html ------------*/

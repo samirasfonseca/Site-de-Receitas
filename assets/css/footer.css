@@ -1,17 +1,17 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    color: #f4d58d;
-    background-color: #8d0801;
-    width: 100vw;
-    max-width: 100%;
+  background-color: #8d0801;
+  color: #f4d58d;
+  width: 100%;
+  margin-top: 5rem;
+  overflow: visible;
 }
 
-.container {
+footer .container {
   padding: 1rem;
- display: flex;
- align-items: center;
- justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* ajuda em telas pequenas */
 }
 
 footer .links a {
@@ -37,13 +37,15 @@ footer .links a:hover {
 }
 
 .footer-bottom {
-    color: #f4d58d;
-    font-size: 1rem;
-    text-align: center;
+  color: #f4d58d;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
-  .container {
+  footer .container {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -64,10 +66,4 @@ footer .links a:hover {
     font-size: 1.3rem;
     margin: 0 0.5rem;
   }
-
-  .footer-bottom {
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
 }
-
