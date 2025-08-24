@@ -15,7 +15,8 @@
 }
 
 .navbar.active {
-  display: flex; /* aparece quando clica no botão */
+  display: flex; 
+  height: auto;/* aparece quando clica no botão */
 }
 
 /* telas grandes (desktop) */
@@ -28,5 +29,6 @@
     display: flex !important; /* sempre visível no desktop */
     flex-direction: row;
     gap: 1rem;
+    height: auto;
   }
 }
