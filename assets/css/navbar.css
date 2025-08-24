@@ -9,13 +9,33 @@ nav {
 
 nav h1 {
   color: #f4d58d;
-  font-size: 2rem;
-  margin: 0;
+  font-size: 1.8rem;
+  margin: 0 ;
 }
 
 .navbar {
-  display: flex;
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 4rem;
   gap: 1rem;
+}
+
+.menu-toggle {
+  font-size: 3rem;        
+  background: none;       
+  border: none;          
+  color: #8d0801;        
+  cursor: pointer;
+  margin: 0.3rem;          
+  position: absolute;    
+  top: 0.3rem;
+  right: 0.3rem;           
+  z-index: 1000;         
+}
+
+.navbar.active {
+  display: flex;
 }
 
 .navbar a {
@@ -29,6 +49,21 @@ nav h1 {
 .navbar a:hover {
   border-bottom: #f4d58d 2px solid;
   background-color: #708d8141;
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .navbar {
+    display: flex !important; 
+    flex-direction: row;
+    background: none;
+    padding: 0;
+  
+  }
+
+  .menu-toggle {
+    display: none; 
+  }
 }
 
 
