@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
 nav {
   display: flex;
   align-items: center;
@@ -5,33 +12,30 @@ nav {
   padding: 0.5rem 1rem;
   background-color: #001427;
   flex-wrap: wrap;
+  position: relative;
 }
 
 nav h1 {
   color: #f4d58d;
   font-size: 1.8rem;
-  margin: 0 ;
+  margin: 0;
+}
+
+.menu-toggle {
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: #8d0801;
+  cursor: pointer;
+  margin-left: auto; /* empurra o botão para direita */
 }
 
 .navbar {
   display: none;
   flex-direction: column;
-  padding: 1rem;
-  font-size: 4rem;
-  gap: 1rem;
-}
-
-.menu-toggle {
-  font-size: 3rem;        
-  background: none;       
-  border: none;          
-  color: #8d0801;        
-  cursor: pointer;
-  margin: 0.3rem;          
-  position: absolute;    
-  top: 0.3rem;
-  right: 0.3rem;           
-  z-index: 1000;         
+  width: 100%;
+  gap: 0.5rem;
+  padding: 1rem 0;
 }
 
 .navbar.active {
@@ -43,27 +47,25 @@ nav h1 {
   font-size: 1.2rem;
   color: #f4d58d;
   font-weight: 500;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .navbar a:hover {
-  border-bottom: #f4d58d 2px solid;
+  border-bottom: 2px solid #f4d58d;
   background-color: #708d8141;
 }
 
 /* Desktop */
 @media (min-width: 769px) {
-  .navbar {
-    display: flex !important; 
-    flex-direction: row;
-    background: none;
-    padding: 0;
-  
+  .menu-toggle {
+    display: none;
   }
 
-  .menu-toggle {
-    display: none; 
+  .navbar {
+    display: flex !important;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+    gap: 1rem;
   }
 }
-
-
