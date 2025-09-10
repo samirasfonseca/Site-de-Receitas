@@ -4,7 +4,7 @@ Um site acolhedor e responsivo para compartilhar receitas afetivas, enviar mensa
 
 ## 🔗 Acesse o site publicado
 
-👉 [Visualizar no GitHub Pages](https://samirasfonseca.github.io/-Site-de-Receitas/)
+👉 [Visualizar no GitHub Pages](https://samirasfonseca.github.io/Site-de-Receitas/)
 
 ---
 
